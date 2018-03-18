@@ -191,7 +191,7 @@ def correct_colours(im1, im2, landmarks1):
 			im2_blur.astype(numpy.float64))
 
 def actual(request):
-	im1, landmarks1 = read_im_and_landmarks(settings.MEDIA_ROOT + '/jodhabai.jpg')
+	im1, landmarks1 = read_im_and_landmarks(settings.MEDIA_ROOT + '/batlivala.JPG')
 	im2, landmarks2 = read_im_and_landmarks(settings.MEDIA_ROOT + '/someimage.jpg')
 
 	M = transformation_from_points(landmarks1[ALIGN_POINTS],
